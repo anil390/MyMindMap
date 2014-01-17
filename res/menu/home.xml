@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/action_tools"
+          android:icon="@drawable/ic_action_location_found"
+          android:title="@string/select_tools"
+          android:showAsAction="ifRoom"  />
+   
+    <item android:id="@+id/action_help"
+          android:icon="@drawable/ic_action_help"
+          android:title="Menu"
+          android:showAsAction="never"/>
+     
+    <!-- Check updates -->
+    
+</menu>

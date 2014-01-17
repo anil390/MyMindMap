@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioTools"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+             >
+
+            <RadioButton
+                android:id="@+id/radioRect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Rectangle"
+                android:layout_marginBottom="20dip" />
+
+            <RadioButton
+                android:id="@+id/radioEllipse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ellipse"
+                android:layout_marginBottom="20dip" />
+
+            <RadioButton
+                android:id="@+id/radioLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line"
+                android:layout_marginBottom="20dip" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_weight="0.56"
+           
+            android:src="@drawable/small_rect" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+       
+        android:layout_weight=".7" />
+
+    <TextView
+        android:id="@+id/seekbarTV"
+        android:layout_width="wrap_content"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:text="small" />
+    
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selectedBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="right" />
+    
+     <com.anil.android.mymindmap.ColorMixer
+    android:id="@+id/mixer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  />
+
+</LinearLayout>
